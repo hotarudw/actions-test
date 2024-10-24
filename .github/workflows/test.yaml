@@ -1,0 +1,14 @@
+name: Deploy test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-migration:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - uses: actions/checkout@v4
