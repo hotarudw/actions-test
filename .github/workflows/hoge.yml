@@ -1,4 +1,4 @@
-name: Deploy test
+name: Merge PR test
 
 on:
   pull_request_target:
