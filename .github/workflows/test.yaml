@@ -1,5 +1,7 @@
 name: Deploy test
 
+permissions: {}
+
 on:
   push:
     branches:
